@@ -3,10 +3,12 @@ const mongoose = require('mongoose');
 require('dotenv/config');
 const app = express();
 const todosRoutes = require('./routes/todos');
+const authRoutes = require('./routes/auth');
 
 // Middlewares
 app.use(express.json());
 app.use('/api/todos', todosRoutes);
+app.use('/api/user', authRoutes);
 
 app.listen(3000);
 
