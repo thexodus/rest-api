@@ -1,2 +1,2 @@
 # rest-api
-Rest API with JWT authentication
+Rest API with JSON web tokens
